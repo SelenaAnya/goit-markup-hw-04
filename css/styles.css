@@ -1,0 +1,405 @@
+:root {
+    --primary-text-color: #212121;
+    --title-text-color: #ffff;
+    --accent-text-color: #2196f3;
+    --header-text-color: #757575;
+    --logo-text-color: black;
+    --contact-text-color: rgba(255, 255, 255, 0.6);
+    --backgriund-color: #f5f4fa;
+    --border-button-color: rgba(0, 0, 0, 0.15);
+}
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    text-align: center;
+}
+
+h2,
+h3 {
+    color: var(--primary-text-color);
+}
+
+h2 {
+    color: var(--primary-text-color);
+}
+
+h3 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 1, 14;
+    letter-spacing: 0.03em;
+}
+
+ul {
+    list-style: none;
+}
+
+.header {
+    color: var(--primary-text-color);
+    display: flex;
+    width: 1200px;
+}
+
+p {
+    color: var(--header-text-color);
+}
+.container {
+    width: 1200px;
+    margin-left: 215px;
+}
+
+.section {
+    padding-bottom: 94px;
+    padding-top: 94px;
+}
+
+/* -------------------------------header---------------------------------------- */
+.header {
+    text-align: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-family: "Raleway", sans-serif;
+    font-weight: 900px;
+    color: var(--accent-text-color);
+    text-decoration: none;
+    font-style: normal;
+    font-size: 26px;
+    letter-spacing: 0.03em;
+    font-style: 1.2em;
+    padding-top: 24px;
+    padding-bottom: 25px;
+}
+
+span {
+    color: var(--logo-text-color);
+}
+
+.nav {
+    cursor: pointer;
+    padding-left: 93px;
+    display: inline-block;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu-item {
+    margin-right: 50px;
+    margin-top: 32px;
+}
+
+.menu-item:last-child {
+    margin-right: 0;
+}
+
+.menu a {
+    color: var(--primary-text-color);
+    font-weight: 500;
+    text-align: right;
+    height: 16px;
+    text-decoration: none;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+}
+
+.menu a:hover,
+.menu a:active,
+.menu a:focus {
+    color: var(--accent-text-color);
+}
+
+.contacts {
+    display: flex;
+    justify-content: right;
+}
+
+.contacts li {
+    margin-top: 32px;
+}
+
+.contacts li:not(:last-child) {
+    margin-right: 50px;
+}
+
+.contacts a {
+    text-decoration: none;
+    color: var(--header-text-color);
+}
+
+.contacts a:hover,
+.contacts a:active,
+.contacts a:focus {
+    color: var(--accent-text-color);
+}
+
+.menu-item .current {
+    color: var(--accent-text-color);
+}
+
+/* -----------------------------------filter ------------------------------------- */
+.container {
+    cursor: pointer;
+}
+
+.menu-btn {
+    display: flex;
+    margin-bottom: 34px;
+    justify-content: center;
+}
+
+.menu-btn .btn-item:not(:last-child) {
+    margin-right: 8px;
+}
+
+.btn {
+    background: #f5f4fa;
+    color: var(--primary-text-color);
+    letter-spacing: 0.03em;
+    font-weight: 500;
+    padding: 6px 22px;
+    border-radius: 4px;
+    text-align: center;
+    border: 0;
+}
+
+.btn:active,
+.btn:hover,
+.btn:focus {
+    color: var(--title-text-color);
+    background: #2196f3;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+}
+
+.menu-btn .btn.current {
+    color: var(--title-text-color);
+    background: #2196f3;
+}
+.sectoin {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+/* -------------------------------Peculiarities------------------------------------- */
+
+.order {
+    background: #2f303a;
+    top: 80px;
+    padding-bottom: 200px;
+    padding-top: 200px;
+    margin: 0 auto;
+}
+
+.business {
+    font-weight: 900;
+    letter-spacing: 0.06em;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 30px;
+    line-height: 60px;
+    font-size: 44px;
+    color: var(--title-text-color);
+    text-align: center;
+}
+
+/* ----------------------------order--------------------- */
+
+.about-block {
+    margin-right: 20px;
+    text-align: left;
+}
+
+.btn-business {
+    font-family: Roboto, sans-serif;
+    background-color: var(--accent-text-color);
+    text-align: center;
+    padding: 10px 32px;
+    left: 700px;
+    letter-spacing: 0.06em;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 1, 88;
+    color: var(--title-text-color);
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px var(--border-button-color);
+    border: none;
+    cursor: pointer;
+}
+
+.text {
+    margin-top: 10px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+}
+
+.about {
+    display: flex;
+}
+
+/*------------------------------------ about us ----------------------------------*/
+.title-we-do {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.we-do {
+    display: flex;
+    justify-content: space-between;
+}
+
+.we-do-prew {
+    padding-top: 50px;
+    padding-left: 30px;
+}
+
+.we-do-prew:first-child {
+    padding-left: 0;
+}
+
+/* ------------------------------------Team------------------------- */
+.team {
+    background: #f5f4fa;
+}
+
+.text {
+    font-style: normal;
+    text-align-last: left;
+}
+
+/* ----------------------------------project--------------------------------------- */
+
+.our-project {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.our-project .direction:nth-child(3n + 3) {
+    margin-right: 30px;
+}
+
+.direction {
+    text-align: left;
+    border: 1px solid #eeeeee;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+}
+
+.name-block {
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    color: var(--primary-text-color);
+    padding-top: 20px;
+    padding-bottom: 4px;
+    padding-left: 24px;
+}
+
+.direction p {
+    color: var(--header-text-color);
+    font-size: 16px;
+    padding-left: 24px;
+}
+
+/* ------------------------------------------team----------------------------------- */
+
+.team {
+    background-color: var(--backgriund-color);
+}
+
+.our-team {
+    padding-bottom: 50px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.team-block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.employees {
+    text-align: center;
+    margin-left: 30px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.employees:last-child {
+    margin-right: 0;
+}
+
+.employees-name {
+    padding-top: 30px;
+}
+
+.employees p {
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+
+/* ----------------------------------------footer--------------------------------- */
+
+.footer {
+    background: #2f303a;
+    text-align-last: left;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.our-contacts {
+    font-style: normal;
+    padding-top: 20px;
+    text-decoration: none;
+}
+
+.address {
+    color: var(--title-text-color);
+    text-decoration: none;
+}
+
+.logo-footer {
+    color: var(--title-text-color);
+    text-decoration: none;
+}
+
+.our-contacts-block li {
+    padding-bottom: 9px;
+}
+
+.e-mail,
+.tel {
+    color: var(--contact-text-color);
+    text-decoration: none;
+}
+
+.our-contacts-link a:active,
+.our-contacts-link a:hover,
+.our-contacts-link a:focus {
+    color: var(--accent-text-color);
+}
