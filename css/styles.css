@@ -9,6 +9,7 @@
     --border-button-color: rgba(0, 0, 0, 0.15);
     --backgriund-color-footer: #2f303a;
     --color-direction-border: #eeeeee;
+    --backgriund-color-line: #ececec;
 }
 *,
 *::before,
@@ -155,6 +156,14 @@ span {
     color: var(--accent-text-color);
 }
 
+.line::before {
+    display: block;
+    content: "";
+    width: auto;
+    height: 1px;
+    background-color: var(--backgriund-color-line);
+    /* border-bottom: 1px solid #ececec; */
+}
 /* -----------------------------------filter ------------------------------------- */
 .container {
     cursor: pointer;
