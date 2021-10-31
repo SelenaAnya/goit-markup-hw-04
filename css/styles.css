@@ -96,7 +96,7 @@ span {
     cursor: pointer;
     margin-left: 93px;
     display: inline-block;
-    margin-right: 331px;
+    margin-right: 305px;
     padding-top: 32px;
     padding-bottom: 32px;
 }
@@ -122,6 +122,13 @@ span {
     /* repeat: no-repeat; */
     fill: red;
     color: red;
+}
+
+.tel-link {
+    width: 16px;
+    height: 12px;
+    color: var(--primary-text-color);
+    display: block;
 }
 .menu a {
     color: var(--primary-text-color);
@@ -176,18 +183,18 @@ span {
     /* border-bottom: 1px solid #ececec; */
 }
 
-.tel::after {
+/* .tel::after {
     content: "";
     width: 16px;
     height: 12px;
     position: absolute;
-}
+} */
 
-.tel::before {
+/* .tel::before {
     margin-right: 10px;
     color: var(--accent-text-color);
     background-image: url(../img/sprite.svg#icon-smartphone);
-}
+} */
 /* -----------------------------------filter ------------------------------------- */
 .container {
     cursor: pointer;
@@ -442,11 +449,43 @@ span {
     display: flex;
 }
 
+.sosial-icons {
+    color: red;
+}
+
 .social-link {
     display: block;
     width: 44px;
     height: 44px;
     color: var(--color-icon);
+}
+
+/* --------------------клиенты------------- */
+.customer {
+    margin: 0 auto;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.67;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.customer-list {
+    display: flex;
+    text-align: center;
+}
+
+.customer-icons {
+    margin-top: 50px;
+    margin-right: -30px;
+}
+
+.customer-link {
+    width: 170px;
+    height: 92px;
+    margin-right: 30px;
+    position: absolute;
 }
 /* ----------------------------------------footer--------------------------------- */
 
@@ -455,6 +494,7 @@ span {
     text-align-last: left;
     padding-top: 60px;
     padding-bottom: 60px;
+    display: flex;
 }
 
 .bottom-logo {
@@ -468,6 +508,7 @@ span {
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
+    margin-right: 70px;
 }
 
 .address {
