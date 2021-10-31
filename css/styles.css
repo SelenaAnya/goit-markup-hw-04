@@ -113,6 +113,16 @@ span {
     margin-right: 0;
 }
 
+.email-icon {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+    color: var(--primary-text-color);
+    display: block;
+    /* repeat: no-repeat; */
+    fill: red;
+    color: red;
+}
 .menu a {
     color: var(--primary-text-color);
     font-weight: 500;
