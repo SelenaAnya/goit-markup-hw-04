@@ -10,6 +10,7 @@
     --backgriund-color-footer: #2f303a;
     --color-direction-border: #eeeeee;
     --backgriund-color-line: #ececec;
+    --color-icon: #afb1b8;
 }
 *,
 *::before,
@@ -161,18 +162,22 @@ span {
     content: "";
     width: auto;
     height: 1px;
-    background-color: var(--backgriund-color-line);
+    color: var(--color-line);
     /* border-bottom: 1px solid #ececec; */
 }
 
-.header::before {
+.tel::after {
     content: "";
-    width: 100%;
-    height: 1px;
-    color: var(--color-line);
-    display: block;
+    width: 16px;
+    height: 12px;
+    position: absolute;
 }
 
+.tel::before {
+    margin-right: 10px;
+    color: var(--accent-text-color);
+    background-image: url(../img/sprite.svg#icon-smartphone);
+}
 /* -----------------------------------filter ------------------------------------- */
 .container {
     cursor: pointer;
@@ -222,8 +227,7 @@ span {
 
 .hero {
     width: 1600px;
-    background: linear-gradient(rgba(53, 54, 64, 0.4), rgba(53, 54, 64, 0.4)),
-        url(../img/Img\ general.jpg) no-repeat center;
+    background: linear-gradient(rgba(53, 54, 64, 0.4), rgba(53, 54, 64, 0.4)), url(../img/general.jpg) no-repeat center;
     background-size: cover;
     top: 80px;
     padding-bottom: 200px;
@@ -424,6 +428,16 @@ span {
     letter-spacing: 0.03em;
 }
 
+.sosial-general {
+    display: flex;
+}
+
+.social-link {
+    display: block;
+    width: 44px;
+    height: 44px;
+    color: var(--color-icon);
+}
 /* ----------------------------------------footer--------------------------------- */
 
 .footer {
