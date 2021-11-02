@@ -9,7 +9,7 @@
     --border-button-color: rgba(0, 0, 0, 0.15);
     --backgriund-color-footer: #2f303a;
     --color-direction-border: #eeeeee;
-    --backgriund-color-line: #ececec;
+    --color-line: #ececec;
     --color-icon: #afb1b8;
 }
 *,
@@ -71,7 +71,9 @@ p {
 
 /* ------------------------Лого + меню---------------------- */
 .header {
-    text-align: center;
+    color: var(--primary-text-color);
+    display: flex;
+    justify-content: space-between;
 }
 
 .logo {
@@ -86,6 +88,7 @@ p {
     padding-top: 24px;
     padding-bottom: 25px;
     line-height: 1.2;
+    margin-right: 93px;
 }
 
 span {
@@ -94,11 +97,8 @@ span {
 
 .nav {
     cursor: pointer;
-    margin-left: 93px;
     display: inline-block;
     margin-right: 305px;
-    padding-top: 32px;
-    padding-bottom: 32px;
 }
 
 .menu {
@@ -113,6 +113,12 @@ span {
     margin-right: 0;
 }
 
+.menu li {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    margin-right: 50px;
+}
+
 .email-icon {
     width: 16px;
     height: 12px;
@@ -121,15 +127,14 @@ span {
     display: block;
     /* repeat: no-repeat; */
     fill: red;
-    color: red;
 }
 
 .tel-link {
     width: 16px;
     height: 12px;
     color: var(--primary-text-color);
-    display: block;
 }
+
 .menu a {
     color: var(--primary-text-color);
     font-weight: 500;
@@ -150,7 +155,10 @@ span {
 
 .contacts {
     display: flex;
-    justify-content: right;
+}
+
+.contacts li {
+    display: block;
     padding-top: 32px;
     padding-bottom: 32px;
 }
@@ -174,13 +182,9 @@ span {
     color: var(--accent-text-color);
 }
 
-.line::before {
-    display: block;
-    content: "";
+.line {
     width: auto;
-    height: 1px;
-    color: var(--color-line);
-    /* border-bottom: 1px solid #ececec; */
+    border: 1px solid var(--color-line);
 }
 
 /* .tel::after {
@@ -190,11 +194,11 @@ span {
     position: absolute;
 } */
 
-/* .tel::before {
+.tel::before {
     margin-right: 10px;
     color: var(--accent-text-color);
     background-image: url(../img/sprite.svg#icon-smartphone);
-} */
+}
 /* -----------------------------------filter ------------------------------------- */
 .container {
     cursor: pointer;
@@ -327,6 +331,7 @@ span {
     text-align: center;
     letter-spacing: 0.03em;
     text-transform: none;
+    margin-bottom: 50px;
 }
 
 .we-do {
@@ -334,7 +339,6 @@ span {
 }
 
 .we-do-prew {
-    margin-top: 50px;
     margin-right: 30px;
     max-width: 100%;
     display: block;
@@ -359,8 +363,7 @@ span {
 .our-project {
     display: flex;
     flex-wrap: wrap;
-    margin-right: -30px;
-    margin-bottom: -30px;
+    margin: -15px;
 }
 
 .direction {
@@ -368,8 +371,15 @@ span {
     text-align: left;
     border: 1px solid var(--color-direction-border);
     padding-bottom: 20px;
-    margin-bottom: 30px;
-    margin-right: 30px;
+    margin: 15px;
+}
+
+.direction img {
+    margin-bottom: 20px;
+}
+
+.direction-name {
+    padding-left: 24px;
 }
 
 .name-block {
@@ -386,9 +396,7 @@ span {
 .direction p {
     color: var(--header-text-color);
     font-size: 16px;
-    padding-left: 24px;
     margin-top: 4px;
-    font-style: 16px;
     letter-spacing: 0.03em;
     font-weight: 400;
     font-style: normal;
@@ -415,6 +423,9 @@ span {
     margin-top: 50px;
 }
 
+.employees img {
+    margin-bottom: 30px;
+}
 .employees {
     text-align: center;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -422,6 +433,7 @@ span {
     background-color: var(--title-text-color);
     max-width: 100%;
     margin-right: 30px;
+    padding-bottom: 30px;
 }
 
 .employees:last-child {
@@ -429,16 +441,15 @@ span {
 }
 
 .employees-name {
-    margin-top: 30px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
     letter-spacing: 0.03em;
+    margin-bottom: 10px;
 }
 
 .employees p {
     padding-top: 10px;
-    padding-bottom: 30px;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.19;
@@ -485,7 +496,7 @@ span {
     width: 170px;
     height: 92px;
     margin-right: 30px;
-    position: absolute;
+    text-align: center;
 }
 /* ----------------------------------------footer--------------------------------- */
 
