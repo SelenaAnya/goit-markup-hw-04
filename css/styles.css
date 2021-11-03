@@ -539,7 +539,15 @@ span {
     text-align-last: left;
     padding-top: 60px;
     padding-bottom: 60px;
+}
+
+.footer-contacts-social {
     display: flex;
+    text-align: center;
+    box-sizing: border-box;
+    width: 50%;
+    flex-wrap: nowrap;
+    white-space: nowrap;
 }
 
 .bottom-logo {
@@ -553,7 +561,6 @@ span {
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
-    margin-right: 70px;
 }
 
 .address {
@@ -584,4 +591,37 @@ span {
 .our-contacts-block a:hover,
 .our-contacts-block a:focus {
     color: var(--accent-text-color);
+}
+
+.footer-social {
+    text-align: right;
+}
+
+.footer-text {
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-style: 14px;
+    margin-bottom: 20px;
+    color: var(--title-text-color);
+}
+
+.footer-sosial-general {
+    display: flex;
+}
+
+.footer-sosial-icons {
+    width: 44px;
+    height: 44px;
+    margin-right: 10px;
+    border-radius: 50%;
+    background-color: red;
+}
+
+.footer-sosial-icons:last-child {
+    margin-right: 10px;
+}
+
+.footer-block {
+    margin-right: 70px;
 }
