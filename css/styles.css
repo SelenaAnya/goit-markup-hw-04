@@ -116,7 +116,6 @@ span {
 
 .menu li {
     padding-top: 32px;
-    padding-bottom: 32px;
     margin-right: 50px;
 }
 
@@ -166,6 +165,8 @@ span {
 .contacts a {
     text-decoration: none;
     color: var(--header-text-color);
+    padding-bottom: 32px;
+    padding-top: 32px;
 }
 
 .contacts li:hover,
@@ -240,6 +241,7 @@ span {
     padding-top: 94px;
     padding-bottom: 94px;
 }
+
 /*                      Эффективные решения           */
 
 .hero {
@@ -380,16 +382,17 @@ span {
     width: calc(100% / 3 - 30px);
     text-align: left;
     border: 1px solid var(--color-direction-border);
-    padding-bottom: 20px;
     margin: 15px;
 }
 
 .direction img {
-    margin-bottom: 20px;
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 .direction-name {
-    padding-left: 24px;
+    padding: 24px 20px;
 }
 
 .name-block {
@@ -398,8 +401,6 @@ span {
     letter-spacing: 0.06em;
     font-style: normal;
     color: var(--primary-text-color);
-    margin-top: 20px;
-    padding-left: 24px;
     line-height: 1.5;
 }
 
@@ -413,6 +414,9 @@ span {
     line-height: 1.88;
 }
 
+.direction:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 /* --------------------------Команда ----------------------- */
 
 .team {
@@ -435,6 +439,9 @@ span {
 
 .employees img {
     margin-bottom: 30px;
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 .employees {
     text-align: center;
@@ -557,6 +564,10 @@ span {
 .logo-footer {
     color: var(--title-text-color);
     text-decoration: none;
+}
+
+.our-contacts-block li {
+    margin-bottom: 9px;
 }
 
 .our-contacts-block li {
