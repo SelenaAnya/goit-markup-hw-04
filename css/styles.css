@@ -618,6 +618,12 @@ span {
     background-color: red;
 }
 
+.footer-soslial-link {
+    width: 20px;
+    height: 20px;
+    text-align: center;
+}
+
 .footer-sosial-icons:last-child {
     margin-right: 10px;
 }
