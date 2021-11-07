@@ -151,7 +151,6 @@ span {
 .email-icon {
     margin-right: 10px;
     color: var(--primary-text-color);
-    fill: red;
 }
 
 .tel-link {
@@ -173,6 +172,7 @@ span {
 .contacts li:active,
 .contacts li:focus {
     color: var(--accent-text-color);
+    fill: var(--accent-text-color);
 }
 
 .menu-item .current {
@@ -181,12 +181,18 @@ span {
 
 .email-link {
     fill: var(--color-icon);
-    background-color: red;
     margin-right: 10px;
+    fill: var(--header-text-color);
 }
+
+/* .email-link:hover,
+.email-link:active,
+.email-link:focus {
+    fill: var(--accent-text-color);
+} */
+
 .tel-link {
     color: var(--accent-text-color);
-    background-color: green;
     margin-right: 10px;
 }
 
@@ -298,7 +304,6 @@ span {
 
 .about-icon-link {
     position: absolute;
-    background-color: red;
 }
 
 .btn-business {
@@ -485,8 +490,8 @@ span {
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    background-color: red;
     margin-right: 10px;
+    border: 1px solid var(--header-text-color);
 }
 
 .sosial-icons:last-child {
@@ -494,10 +499,20 @@ span {
 }
 
 .social-link {
-    display: block;
-    width: 44px;
-    height: 44px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
     color: var(--color-icon);
+    margin: auto;
+    transform: translateY(50%);
+    background-repeat: no-repeat;
+}
+
+.sosial-icons:hover,
+.sosial-icons:focus {
+    fill: var(--color-direction-border);
+    background-color: var(--accent-text-color);
+    border: 1px solid var(--accent-text-color);
 }
 
 /*                постоянные клиенты              */
@@ -619,6 +634,8 @@ span {
     margin-right: 10px;
     border-radius: 50%;
     background-color: red;
+    display: inline;
+    fill: var(--backgriund-color-footer);
 }
 
 .footer-soslial-link {
