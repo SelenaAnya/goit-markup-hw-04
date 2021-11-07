@@ -151,7 +151,6 @@ span {
 
 .email-icon {
     margin-right: 10px;
-    color: var(--primary-text-color);
 }
 
 .tel-link {
@@ -169,13 +168,6 @@ span {
     padding-top: 32px;
 }
 
-/* .e-mail:hover,
-.e-mail:active,
-.e-mail:focus {
-    color: var(--accent-text-color);
-    fill: var(--accent-text-color);
-} */
-
 .contacts a:hover,
 .contacts a:focus,
 .contacts a:active {
@@ -188,16 +180,9 @@ span {
 }
 
 .email-link {
-    fill: var(--color-icon);
+    fill: var(--color-social-icon);
     margin-right: 10px;
-    fill: var(--header-text-color);
 }
-
-/* .email-link:hover,
-.email-link:active,
-.email-link:focus {
-    fill: var(--accent-text-color);
-} */
 
 .tel-link {
     color: var(--accent-text-color);
