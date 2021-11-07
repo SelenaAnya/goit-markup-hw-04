@@ -169,6 +169,17 @@ span {
 .contacts a:active,
 .contacts a:focus {
     color: var(--accent-text-color);
+}
+
+.contacts a:hover .email-link,
+.contacts a:active .email-link,
+.contacts a:focus .email-link {
+    fill: var(--accent-text-color);
+}
+
+.contacts a:hover .tel-link,
+.contacts a:active .tel-link,
+.contacts a:focus .tel-link {
     fill: var(--accent-text-color);
 }
 
@@ -503,9 +514,8 @@ span {
     background-color: var(--accent-text-color);
 }
 
-.soсial-link-icon:hover,
-.soсial-link-icon:active,
-.soсial-link-icon:focus {
+.soсial-icons:hover .soсial-link-icon,
+.soсial-icons:focus .soсial-link-icon {
     fill: var(--title-text-color);
 }
 
@@ -549,13 +559,12 @@ span {
 .customer-icons:hover,
 .customer-icons:active,
 .customer-icons:focus {
-    fill: var(--accent-text-color);
     border: 1px solid var(--accent-text-color);
 }
 
-.customer-link:hover,
-.ccustomer-link:active,
-.customer-link:focus {
+.customer-icons:hover .customer-link,
+.customer-icons:active .customer-link,
+.customer-icons:focus .customer-link {
     fill: var(--accent-text-color);
 }
 
