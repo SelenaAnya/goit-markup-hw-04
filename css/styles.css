@@ -653,16 +653,20 @@ span {
     margin-right: 10px;
     border-radius: 50%;
     background-color: var(--color-backgriund-link);
-    display: inline;
     fill: var(--backgriund-color-footer);
-    text-align: center;
 }
 
 .footer-soslial-link {
+    display: inline-block;
+    padding: 12px;
+}
+
+.footer-social-link-icon {
     width: 20px;
     height: 20px;
-    text-align: center;
-    transform: translateY(25%);
+    margin: auto;
+    background-repeat: no-repeat;
+    fill: var(--title-text-color);
 }
 
 .footer-sosial-icons:last-child {
@@ -671,4 +675,10 @@ span {
 
 .footer-block {
     margin-right: 70px;
+}
+
+.footer-sosial-icons:focus,
+.footer-sosial-icons:active,
+.footer-sosial-icons:hover {
+    background-color: var(--accent-text-color);
 }
