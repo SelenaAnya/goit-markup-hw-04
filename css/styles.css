@@ -169,9 +169,9 @@ span {
     padding-top: 32px;
 }
 
-.contacts-link:hover,
-.contacts-link:active,
-.contacts-link:focus {
+.contacts a:hover,
+.contacts a:active,
+.contacts a:focus {
     color: var(--accent-text-color);
     fill: var(--accent-text-color);
 }
@@ -493,13 +493,16 @@ span {
 }
 
 .soсial-link {
-    display: inline-block;
+}
+
+.soсial-link-icon {
     width: 20px;
     height: 20px;
     margin: auto;
     background-repeat: no-repeat;
     fill: var(--color-social-icon);
-    transform: translateY(25%);
+    transform: translateY(50%);
+    display: inline-block;
 }
 
 .soсial-icons:hover,
@@ -507,9 +510,9 @@ span {
     background-color: var(--accent-text-color);
 }
 
-.soсial-link:hover,
-.soсial-link:active,
-.soсial-link:focus {
+.soсial-link-icon:hover,
+.soсial-link-icon:active,
+.soсial-link-icon:focus {
     fill: var(--title-text-color);
 }
 
