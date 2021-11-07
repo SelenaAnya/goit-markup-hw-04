@@ -11,7 +11,7 @@
     --color-direction-border: #eeeeee;
     --color-line: #ececec;
     --color-icon: #afb1b8;
-    --color-social-icon: AFB1B8;
+    --color-social-icon: #afb1b8;
 }
 *,
 *::before,
@@ -169,9 +169,16 @@ span {
     padding-top: 32px;
 }
 
-.contacts li:hover,
-.contacts li:active,
-.contacts li:focus {
+/* .e-mail:hover,
+.e-mail:active,
+.e-mail:focus {
+    color: var(--accent-text-color);
+    fill: var(--accent-text-color);
+} */
+
+.contacts a:hover,
+.contacts a:focus,
+.contacts a:active {
     color: var(--accent-text-color);
     fill: var(--accent-text-color);
 }
@@ -492,6 +499,7 @@ span {
     height: 44px;
     border-radius: 50%;
     margin-right: 10px;
+    fill: var(--color-social-icon);
 }
 
 .sosial-icons:last-child {
@@ -514,8 +522,8 @@ span {
     background-color: var(--accent-text-color);
 }
 
-.social-icons svg:hover,
-.social-icons svg:focus {
+.social-icons a:hover,
+.social-icons a:focus {
     fill: var(--title-text-color);
 }
 /*                постоянные клиенты              */
@@ -551,6 +559,7 @@ span {
     width: 106px;
     height: 60px;
     text-align: center;
+    fill: var(--color-social-icon);
 }
 /* ----------------------------------------footer--------------------------------- */
 
