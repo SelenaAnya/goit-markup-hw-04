@@ -11,6 +11,7 @@
     --color-direction-border: #eeeeee;
     --color-line: #ececec;
     --color-icon: #afb1b8;
+    --color-social-icon: AFB1B8;
 }
 *,
 *::before,
@@ -491,7 +492,6 @@ span {
     height: 44px;
     border-radius: 50%;
     margin-right: 10px;
-    border: 1px solid var(--header-text-color);
 }
 
 .sosial-icons:last-child {
@@ -502,19 +502,22 @@ span {
     display: inline-block;
     width: 20px;
     height: 20px;
-    color: var(--color-icon);
     margin: auto;
     transform: translateY(50%);
     background-repeat: no-repeat;
+    fill: var(--color-social-icon);
 }
 
 .sosial-icons:hover,
 .sosial-icons:focus {
     fill: var(--color-direction-border);
     background-color: var(--accent-text-color);
-    border: 1px solid var(--accent-text-color);
 }
 
+.social-icons svg:hover,
+.social-icons svg:focus {
+    fill: var(--title-text-color);
+}
 /*                постоянные клиенты              */
 .customer {
     margin: 0 auto;
@@ -548,7 +551,6 @@ span {
     width: 106px;
     height: 60px;
     text-align: center;
-    background-color: red;
 }
 /* ----------------------------------------footer--------------------------------- */
 
