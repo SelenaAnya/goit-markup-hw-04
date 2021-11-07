@@ -150,10 +150,6 @@ span {
     padding-bottom: 32px;
 }
 
-.email-icon {
-    margin-right: 10px;
-}
-
 .tel-link {
     color: var(--primary-text-color);
 }
@@ -492,9 +488,6 @@ span {
     margin-right: 0;
 }
 
-.soсial-link {
-}
-
 .soсial-link-icon {
     width: 20px;
     height: 20px;
@@ -517,6 +510,7 @@ span {
 }
 
 /*                постоянные клиенты              */
+
 .customer {
     margin: 0 auto;
     text-transform: uppercase;
