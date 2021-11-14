@@ -372,6 +372,10 @@ span {
     margin-right: 0;
 }
 
+.we-do-prew img {
+    display: block;
+}
+
 /*                       Команда              */
 
 .team {
@@ -451,7 +455,6 @@ span {
 }
 
 .employees img {
-    margin-bottom: 30px;
     display: block;
     max-width: 100%;
     height: auto;
@@ -463,11 +466,14 @@ span {
     background-color: var(--title-text-color);
     max-width: 100%;
     margin-right: 30px;
-    padding-bottom: 30px;
 }
 
 .employees:last-child {
     margin-right: 0;
+}
+
+.team-cards {
+    padding: 30px 32px;
 }
 
 .employees-name {
@@ -479,7 +485,6 @@ span {
 }
 
 .employees p {
-    padding-top: 10px;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.19;
@@ -489,7 +494,6 @@ span {
 
 .soсial-general {
     display: flex;
-    margin-left: 32px;
 }
 
 .soсial-icons {
