@@ -195,6 +195,7 @@ span {
 .tel-link {
     color: var(--header-text-color);
     margin-right: 10px;
+    fill: var(--header-text-color);
 }
 
 .line {
@@ -508,6 +509,10 @@ span {
     margin-right: 0;
 }
 
+.sosial-link {
+    display: block;
+}
+
 .soсial-link-icon {
     width: 20px;
     height: 20px;
@@ -519,12 +524,21 @@ span {
 }
 
 .soсial-icons:hover,
-.soсial-icons:focus {
+.soсial-icons:focus,
+.soсial-icons:active {
     background-color: var(--accent-text-color);
 }
 
 .soсial-icons:hover .soсial-link-icon,
-.soсial-icons:focus .soсial-link-icon {
+.soсial-icons:focus .soсial-link-icon,
+.soсial-icons:active .social-link-icon {
+    fill: var(--title-text-color);
+}
+
+.soсial-icons a:focus {
+    background-color: var(--accent-text-color);
+}
+.soсial-icons a:focus svg {
     fill: var(--title-text-color);
 }
 
@@ -532,7 +546,6 @@ span {
 
 .customer {
     margin: 0 auto;
-    text-transform: uppercase;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.67;
@@ -548,10 +561,12 @@ span {
 }
 
 .customer-icons {
-    padding: 16px 32px;
     border: 1px solid var(--border-button-color);
     box-sizing: border-box;
     border-radius: 4px;
+    width: 170px;
+    height: 92px;
+    padding: 16px 32px;
     margin-right: 30px;
 }
 
@@ -577,20 +592,25 @@ span {
     fill: var(--accent-text-color);
 }
 
+.customer-icons a:focus {
+    border: 1px solid var(--accent-text-color);
+}
+
+.customer-icons a:focus svg {
+    fill: var(--accent-text-color);
+}
 /* ----------------------------------------footer--------------------------------- */
 
 .footer {
     background: var(--backgriund-color-footer);
-    text-align-last: left;
+    text-align: left;
     padding-top: 60px;
     padding-bottom: 60px;
 }
 
 .footer-contacts-social {
     display: flex;
-    text-align: center;
     box-sizing: border-box;
-    width: 50%;
     flex-wrap: nowrap;
     white-space: nowrap;
 }
@@ -653,9 +673,11 @@ span {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     font-weight: 700;
-    font-style: 14px;
+    font-size: 14px;
     margin-bottom: 20px;
     color: var(--title-text-color);
+    text-align: left;
+    line-height: 1.71;
 }
 
 .footer-sosial-general {
@@ -696,4 +718,9 @@ span {
 .footer-sosial-icons:active,
 .footer-sosial-icons:hover {
     background-color: var(--accent-text-color);
+}
+
+.footer-sosial-icons a:focus {
+    background-color: var(--accent-text-color);
+    border-radius: 50%;
 }
