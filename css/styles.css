@@ -125,12 +125,8 @@ span {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    padding-top: 32px;
-    padding-bottom: 32px;
-}
-
-.menu li {
-    padding-top: 32px;
+    display: flex;
+    padding: 32px 0;
 }
 
 .menu a:hover,
@@ -142,11 +138,6 @@ span {
 .contacts {
     display: flex;
     align-items: flex-end;
-    margin-bottom: 32px;
-}
-
-.contacts li {
-    display: inline-block;
 }
 
 .tel-link {
@@ -160,8 +151,9 @@ span {
 .contacts .contacts-link {
     text-decoration: none;
     color: var(--header-text-color);
-    padding-bottom: 32px;
-    padding-top: 32px;
+    padding: 32px 0;
+    display: flex;
+    text-align: center;
 }
 
 .contacts a:hover,
@@ -507,27 +499,29 @@ span {
 .soсial-icons {
     width: 44px;
     height: 44px;
-    border-radius: 50%;
     margin-right: 10px;
-    fill: var(--color-social-icon);
+    border-radius: 50%;
 }
 
 .soсial-icons:last-child {
     margin-right: 0;
 }
 
-.sosial-link {
-    display: block;
+.soсial-icons .soсial-link {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    fill: var(--color-social-icon);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .soсial-link-icon {
     width: 20px;
     height: 20px;
     margin: auto;
-    background-repeat: no-repeat;
     fill: var(--color-social-icon);
-    transform: translateY(50%);
-    display: inline-block;
 }
 
 .soсial-icons:hover,
@@ -558,32 +552,28 @@ span {
     line-height: 1.67;
     text-align: center;
     letter-spacing: 0.03em;
+    margin-bottom: 50px;
 }
 
 .customer-list {
     display: flex;
     text-align: center;
     margin-right: -30px;
-    margin-top: 50px;
 }
 
 .customer-icons {
-    border: 1px solid var(--border-button-color);
-    box-sizing: border-box;
-    border-radius: 4px;
-    width: 170px;
-    height: 92px;
-    padding: 16px 32px;
     margin-right: 30px;
 }
 
 .customer-icons:last-child {
     margin-right: 0;
 }
+
 .customer-link {
-    width: 106px;
-    height: 60px;
-    text-align: center;
+    border: 1px solid var(--border-button-color);
+    padding: 16px 32px;
+    display: block;
+    border-radius: 4px;
     fill: var(--color-social-icon);
 }
 
@@ -617,9 +607,6 @@ span {
 
 .footer-contacts-social {
     display: flex;
-    box-sizing: border-box;
-    flex-wrap: nowrap;
-    white-space: nowrap;
 }
 
 .bottom-logo {
@@ -701,8 +688,15 @@ span {
 }
 
 .footer-soslial-link {
-    display: inline-block;
-    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border-radius: 50%;
+    background-color: var(--color-backgriund-link);
+    fill: var(--backgriund-color-footer);
 }
 
 .footer-social-link-icon {
