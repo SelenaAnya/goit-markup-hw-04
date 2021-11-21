@@ -119,7 +119,6 @@ span {
     color: var(--primary-text-color);
     font-weight: 500;
     text-align: right;
-    height: 16px;
     text-decoration: none;
     font-style: normal;
     font-size: 14px;
@@ -153,7 +152,7 @@ span {
     color: var(--header-text-color);
     padding: 32px 0;
     display: flex;
-    text-align: center;
+    align-items: center;
 }
 
 .contacts a:hover,
@@ -429,9 +428,9 @@ span {
     line-height: 1.88;
 }
 
-.direction:hover,
-.direction:focus,
-.direction:active {
+.direction-name:hover,
+.direction-name:focus,
+.direction-name:active {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 /* --------------------------Команда ----------------------- */
@@ -520,7 +519,9 @@ span {
 .soсial-link-icon {
     width: 20px;
     height: 20px;
-    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     fill: var(--color-social-icon);
 }
 
@@ -563,17 +564,26 @@ span {
 
 .customer-icons {
     margin-right: 30px;
+    width: 170px;
+    height: 92px;
+    border-radius: 4px;
+    border: 1px solid var(--border-button-color);
 }
 
 .customer-icons:last-child {
     margin-right: 0;
 }
 
-.customer-link {
-    border: 1px solid var(--border-button-color);
-    padding: 16px 32px;
+.customer-icons-link {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.customer-icons-link .customer-link {
     display: block;
-    border-radius: 4px;
     fill: var(--color-social-icon);
 }
 
@@ -607,6 +617,7 @@ span {
 
 .footer-contacts-social {
     display: flex;
+    align-items: baseline;
 }
 
 .bottom-logo {
@@ -670,8 +681,8 @@ span {
     font-size: 14px;
     margin-bottom: 20px;
     color: var(--title-text-color);
-    text-align: left;
     line-height: 1.71;
+    text-align: left;
 }
 
 .footer-sosial-general {
@@ -702,7 +713,6 @@ span {
 .footer-social-link-icon {
     width: 20px;
     height: 20px;
-    margin: auto;
     background-repeat: no-repeat;
     fill: var(--title-text-color);
 }
