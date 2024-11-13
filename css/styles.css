@@ -190,15 +190,12 @@ img {
     color: #404bbf;
 }
 
-/* hero section */
-
-/* .section{
-    padding: 120px 0;
-}                                 */
-
 .hero {
-    background-color: #2e2f42;
+    background-image: url(/images/peopleoffice.jpg);
+    background-color: rgba(46, 47, 66, 0.7);
     padding: 188px 0;
+
+
 }
 
 /* .hero-block {
