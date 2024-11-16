@@ -372,7 +372,7 @@ img {
 }
 
 .text-team {
-    padding: 32px 0;
+    padding: 32px 8px;
 }
 
 .representative {
@@ -384,7 +384,7 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-
+    gap: 24px;
 }
 
 .sosial {
@@ -407,16 +407,17 @@ img {
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    transition: 300ms ease-in;
-    transition-property: color, border-color;
-    color: #ffffff;    
-}
-
-
-.sosial-icon {
+    /* transition: 300ms ease-in;
+    transition-property: color, border-color; */
+    color: #ffffff;
     margin: 12px;
-    fill: currentColor;
 }
+
+
+/* .sosial-icon {
+    
+    fill: currentColor;
+} */
 /* our portfolio */
 
 .portfolio-team {
