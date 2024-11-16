@@ -443,6 +443,13 @@ img {
 
 }
 
+.our-portfolio:hover,
+.our-portfolio:focus {
+    box-shadow: 0px 2px 1px 0px #2E2F4214;
+    box-shadow: 0px 1px 1px 0px #2E2F4229;
+    box-shadow: 0px 1px 6px 0px #2E2F4214;
+}
+
 .card-team {
     padding: 32px 16px;
     border: 1px solid #e7e9fc;
@@ -495,7 +502,6 @@ img {
 
 .our-portfolio:hover .overlay {
     transform:translateY(0);
-
 }
 
 /* --footer menu-- */
