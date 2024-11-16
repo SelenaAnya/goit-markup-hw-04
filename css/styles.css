@@ -414,10 +414,6 @@ img {
 }
 
 
-/* .sosial-icon {
-    
-    fill: currentColor;
-} */
 /* our portfolio */
 
 .portfolio-team {
@@ -475,6 +471,10 @@ img {
 .footer {
     background-color: #2e2f42;
     padding: 100px 0;
+    display: flex;
+    text-align: left;
+    justify-content: left;
+
 }
 
 .footer-logo {
@@ -495,4 +495,24 @@ img {
     color: #f4f4fd;
     letter-spacing: 0.02em;
     min-width: 264px;
+
+}
+.footer-social {
+    
+}
+
+.media {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    font-weight: 500;
+    color: #ffffff;
+    margin-bottom: 16px;
+    text-align: left;
+}
+
+.footer-content socials-link:hover,
+.footer-content socials-link:focus {
+    background-color: #31D0AA;
 }
