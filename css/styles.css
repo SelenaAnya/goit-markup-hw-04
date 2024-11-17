@@ -229,10 +229,8 @@ img {
             rgba(46, 47, 66, 0.7),
             rgba(46, 47, 66, 0.7)),
         url(/images/peopleoffice.jpg);
-    /* background-color: rgba(46, 47, 66, 0.7); */
+    max-width: 1440px;
     background-repeat: no-repeat;
-    /* display: flex;
-    justify-content: center; */
     padding: 188px 0;
     max-width: 100%;
     background-position: center;
@@ -286,7 +284,7 @@ img {
 
 /* company */
 
-.company-block {
+.icon-conpany {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -313,7 +311,10 @@ img {
     background: #F4F4FD;
     border: 1px solid #8E8F99;
     margin-bottom: 8px;
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 112px;
 }
 
 .logo-icon {
@@ -581,8 +582,9 @@ img {
 
 .footer-social .sosial{
     fill: #F4F4FD;
-    transform: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);;
-
+    transform: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    width: 40px;
+    height: 40px;
 }
 
 .footer-content .socials-link:hover,
