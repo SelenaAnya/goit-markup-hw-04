@@ -236,9 +236,9 @@ img {
 
 }
 
-/* .hero-block {
-
-} */
+.hero-block {
+    max-width: 1440px;
+}
 
 .hero-title {
     font-size: 56px;
