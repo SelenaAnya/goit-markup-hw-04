@@ -234,10 +234,9 @@ img {
     background-position: center;
     background-size: cover;
     max-width: 1440px;
-
 }
-
-.hero-block {}
+/* 
+.hero-block {} */
 
 .hero-title {
     font-size: 56px;
